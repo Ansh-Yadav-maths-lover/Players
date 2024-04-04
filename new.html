@@ -1,0 +1,1717 @@
+
+
+
+
+    <style id="INLINE_PEN_STYLESHEET_ID">
+
+      html {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        --plyr-color-main: #5a4bda; /* Changed player main color to a blue shade */
+      }
+
+      video {
+        width: 100%;
+      }
+    </style>
+
+  </head>
+
+<style>
+.telegram-popup {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #0088cc;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
+}
+
+.telegram-popup i {
+    margin-right: 5px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.quality-card,
+.download-card,
+.pc-laptop-card {
+    background-color: #f1f1f1;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.quality-title,
+.pc-laptop-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.player-dropdown {
+    margin-bottom: 20px;
+}
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background: #0A0909;
+    margin: 0;
+    padding: 0;
+    --plyr-color-main: #5a4bda;
+    /* Changed player main color to a blue shade */
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.plyr {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    /* Changed player text color to white */
+}
+
+#logo {
+    position: fixed;
+    background-image: url("https://i.imgur.com/Z52wJgg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.float {
+    height: 60px;
+    width: 60px;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.label-container {
+    position: relative;
+    top: 5px;
+    left: 70px;
+    display: table;
+    visibility: hidden;
+}
+
+.label-text {
+    color: #FFF;
+    background: rgba(51, 51, 51, 0.8);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.label-arrow {
+    display: table-cell;
+    vertical-align: middle;
+    color: #333;
+    opacity: 0.7;
+    transform: scaleX(-1);
+}
+
+a.float+div.label-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover+div.label-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #f8d7da;
+      color: #721c24;
+      border-bottom: none;
+      border-radius: 15px 15px 0 0;
+      font-weight: bold;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .btn {
+      border-radius: 20px;
+    }
+    .alert-message {
+      color: #721c24;
+      font-weight: bold;
+    }
+    .download-btn {
+      width: 100%;
+    }
+</style>
+
+
+
+     
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="free online lectures, Physics Wallah, Apni Kaksha, online education, study material, e-learning, educational platform, learn for free, online courses, educational videos, exam preparation, academic resources, digital learning, self-paced learning, educational content, study resources, video lectures, quality education, virtual classroom, distance learning, educational community, online tutoring, interactive learning, knowledge sharing, open education, e-books, educational technology, self-improvement, online classroom, edutainment, lifelong learning, tutorial videos, academic support, learning community, educational resources, live sessions, skill development, educational empowerment, internet education, knowledge hub, informative content, study aids, online seminars, expert guidance, collaborative learning, educational diversity, learning pathways, career enhancement, knowledge acquisition, exam tips, subject tutorials, holistic learning, exam strategies, study techniques, educational empowerment, practical learning, innovative education, academic excellence, learning materials, educational insights, problem-solving skills, critical thinking, STEM education, arts and humanities, language learning, educational innovation, global education, cultural awareness, personalized learning, student engagement, academic success, teacher collaboration, education for all, professional development, interactive lessons, educational empowerment, learning tools, academic guidance, online quizzes, assessment tools, continuous learning, student-centered learning, future skills, technology in education, educational impact, academic achievement, educational opportunities, online learning community, academic motivation, study hacks, research skills, academic progress, exam readiness, effective study habits, career exploration, educational inclusivity, academic resilience, adaptive learning, educational partnerships, educational aspirations, lifelong skills, learning efficiency, academic exploration, learning flexibility, knowledge enrichment, collaborative education, academic progress tracking, educational support system, self-directed learning, educational strategies, educational trends, educational insights, academic exploration, modern education, learning analytics, educational goals, student success, educational challenges, education advocacy, academic resources, academic growth, educational content creation, learning outcomes, educational best practices, student development, educational impact, online learning trends, educational research, education technology trends">
+<meta name="description" content="Explore the world of knowledge with StudyRays – offering free Physics Wallah lectures, Apni Kaksha insights, and Sankalp Bharat resources. Elevate your learning experience with top-tier educational content at your fingertips.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="StudyRays - Free Online Lectures">
+    <meta property="og:description" content="Access free online lectures from popular educators like Physics Wallah, Apni Kaksha, and more. Join for free!">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://www.studyrays.site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StudyRays - Free Online Lectures">
+    <meta name="twitter:description" content="Access free online lectures from popular educators. Join for free!">
+    <meta name="twitter:image" content="logo.jpg">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
+
+    <title>StudyRays - Free Online Lectures</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4KZZBZEW2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4KZZBZEW2');
+</script>
+   <!--<script disable-devtool-auto="true" src="https://cdn.jsdelivr.net/npm/disable-devtool" clear-log="true" disable-select="false" disable-copy="false" disable-cut="true" disable-paste="true"></script>-->
+
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.gstatic.com" rel="preconnect">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <!-- Vendor CSS Files -->
+     <link href="bootstrap.css" rel="stylesheet">
+     <link href="bootstrap-icon.css" rel="stylesheet">
+     <link href="styleop.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+
+     <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Poppins|Quattrocento+Sans" rel="stylesheet" />
+     <script "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/3.1.3/dash.all.min.js"></script>
+     <script "text/javascript" src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+    <!--     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
+
+     <!-- Template Main CSS File -->
+     <link href="assets/css/style.css" rel="stylesheet">
+
+     <style>
+         body {
+             background-color: #f8f9fa;
+         }
+
+         .card,
+         .custom-card,
+         .class-card {
+             margin-bottom: 20px;
+             border-radius: 10px;
+             overflow: hidden;
+             transition: transform 0.3s, box-shadow 0.3s;
+         }
+
+         .card {
+             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+         }
+
+         .custom-card,
+         .class-card {
+             box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+         }
+
+         .card .card-header {
+             border-radius: 10px 10px 0 0;
+         }
+
+         .custom-card:hover,
+         .class-card:hover {
+             transform: scale(1.05);
+             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+         }
+
+         #loading-container {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: rgba(248, 249, 250, 0.9);
+             /* Semi-transparent background */
+         }
+
+         #loading-spinner {
+             border: 10px solid #5a4bda;
+             border-top: 16px solid transparent;
+             border-radius: 50%;
+             width: 50px;
+             height: 50px;
+             animation: spin 1s linear infinite;
+         }
+
+         @keyframes spin {
+             0% {
+                 transform: rotate(0deg);
+             }
+
+             100% {
+                 transform: rotate(360deg);
+             }
+         }
+
+         #container {
+             display: none;
+             opacity: 0;
+             transition: opacity 1s ease, transform 1s ease;
+             transform: translateY(20px);
+         }
+
+         .channel-icon {
+             width: 50px;
+             height: 50px;
+         }
+
+         .modal-message {
+             color: #4CAF50;
+             font-size: 1.2em;
+             margin-bottom: 10px;
+         }
+
+         .card-body55 {
+             flex: 1 1 auto;
+             color: var(--bs-card-color);
+             min-height: 60px;
+             padding: 0;
+             margin: 10px;
+             text-align: center;
+         }
+
+
+         .c-card img {
+             width: 40%;
+             height: auto;
+             display: block;
+             margin: 20px auto 0;
+             /* Adjust the top margin (10px in this example) */
+             border-radius: 15px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             transition: box-shadow 0.3s ease-in-out;
+         }
+
+
+         .card-title {
+             font-size: 1rem;
+             font-weight: bold;
+             color: #007bff;
+         }
+
+         .card-subtitle {
+             font-size: 1.2rem;
+             color: #6c757d;
+         }
+
+         .batch-name {
+             font-size: 1rem;
+             font-weight: bold;
+             color: #007bff;
+         }
+
+         .c-card:hover img {
+             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+         }
+
+
+         .spinner {
+             width: 56px;
+             height: 56px;
+             display: grid;
+             border: 4.5px solid #0000;
+             border-radius: 50%;
+             border-color: #dbdcef #0000;
+             animation: spinner-e04l1k 1s infinite linear;
+         }
+
+         .spinner::before,
+         .spinner::after {
+             content: "";
+             grid-area: 1/1;
+             margin: 2.2px;
+             border: inherit;
+             border-radius: 50%;
+         }
+
+         .spinner::before {
+             border-color: #474bff #0000;
+             animation: inherit;
+             animation-duration: 0.5s;
+             animation-direction: reverse;
+         }
+
+         .spinner::after {
+             margin: 8.9px;
+         }
+
+         @keyframes spinner-e04l1k {
+             100% {
+                 transform: rotate(1turn);
+             }
+         }
+
+         .heart {
+             width: 60px;
+             height: 60px;
+             display: inline-block;
+             background: url(like.png);
+             cursor: pointer;
+             margin: -25px -15px;
+         }
+
+
+         .heart-blast {
+             background-position: -1680px 0 !important;
+             transition: background 1s steps(28);
+         }
+
+         span.heart {}
+
+         #preloader {
+             position: fixed;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             z-index: 1000;
+             /* Add your preloader styles here */
+         }
+
+         /*#content {*/
+         /*    opacity: 0;*/
+         /*    transition: opacity 1s ease-in-out;*/
+             /* Adjust the duration and timing function as needed */
+         /*}*/
+     </style>
+
+
+
+
+
+
+     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+     <script>
+         window.OneSignalDeferred = window.OneSignalDeferred || [];
+         OneSignalDeferred.push(function(OneSignal) {
+             OneSignal.init({
+                 appId: "69f19ba7-6b58-4772-bda7-c850c617ecc7",
+                 safari_web_id: "web.onesignal.auto.2cb21d9d-922f-420a-8137-99f511b7fc1b",
+                 notifyButton: {
+                     enable: true,
+                 },
+             });
+         });
+     </script>
+ </head>
+
+
+
+ <body>
+
+     <!--*******************
+        Preloader start
+    ********************-->
+    
+<!--<div id="preloader">-->
+<!--    <div class="spinner"></div>-->
+<!--</div>-->
+
+     <!--*******************
+        Preloader end
+    ********************-->
+
+     <!--**********************************
+        Main wrapper start
+    ***********************************-->
+     <main id="main" class="main">
+         
+          <!-- ======= Sidebar ======= -->
+ <aside id="sidebar" class="sidebar">
+
+     <ul class="sidebar-nav" id="sidebar-nav">
+
+         <li class="nav-item">
+             <a class="nav-link " href="index.php">
+                 <i class="bi bi-grid"></i>
+                 <span>StudyRays</span>
+             </a>
+         </li><!-- End Dashboard Nav -->
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                 <i class="bi bi-menu-button-wide"></i><span>Physics Wallah</span><i
+                     class="bi bi-chevron-down ms-auto"></i>
+             </a>
+             <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li>
+                     <a href="/batch-by-class.php">
+                         <i class="bi bi-circle"></i><span>All Batches</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/khazana.php">
+                         <i class="bi bi-circle"></i><span>Khazana</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/update/">
+                         <i class="bi bi-circle"></i><span>Update Batches</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/update/">
+                         <i class="bi bi-circle"></i><span>Add Batches</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/favorite.php">
+                         <i class="bi bi-circle"></i><span>Favorite List</span>
+                     </a>
+                 </li>
+
+             </ul>
+         </li><!-- End Components Nav -->
+
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" data-bs-target="#sankalp-bharat" data-bs-toggle="collapse" href="#">
+                 <i class="bi bi-menu-button-wide"></i><span>Sankalp Bharat</span><i
+                     class="bi bi-chevron-down ms-auto"></i>
+             </a>
+             <ul id="sankalp-bharat" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li>
+                     <a href="/sanaklp/">
+                         <i class="bi bi-circle"></i><span>Sankalp Bharat</span>
+                     </a>
+                 </li>
+
+
+             </ul>
+         </li><!-- End Components Nav -->
+
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" data-bs-target="#apni-kakasha" data-bs-toggle="collapse" href="#">
+                 <i class="bi bi-menu-button-wide"></i><span>Apni Kak</span><i class="bi bi-chevron-down ms-auto"></i>
+             </a>
+             <ul id="apni-kakasha" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li>
+                     <a href="/apk/">
+                         <i class="bi bi-circle"></i><span>Apni kak</span>
+                     </a>
+                 </li>
+
+
+             </ul>
+         </li><!-- End Components Nav -->
+
+
+
+
+         <li class="nav-heading">Policies</li>
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" data-bs-target="#policy-pages" data-bs-toggle="collapse" href="#">
+                 <i class="bi bi-menu-button-wide"></i><span>Policy Pages</span><i
+                     class="bi bi-chevron-down ms-auto"></i>
+             </a>
+             <ul id="policy-pages" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                 <li>
+                     <a href="/privacy-policy.php">
+                         <i class="bi bi-circle"></i><span>Privacy Policy</span>
+                     </a>
+                 </li>
+
+                 <li>
+                     <a href="/term-and-condition.php">
+                         <i class="bi bi-circle"></i><span>Term & Condition</span>
+                     </a>
+                 </li>
+
+
+                 <li>
+                     <a href="/aboutus.php">
+                         <i class="bi bi-circle"></i><span>About Us</span>
+                     </a>
+                 </li>
+
+
+                 <li>
+                     <a href="/contactus.php">
+                         <i class="bi bi-circle"></i><span>Contact Us</span>
+                     </a>
+                 </li>
+
+
+                </ul>
+                
+                 <li class="nav-heading">Social Pages</li>
+
+<li class="nav-item">
+    <a class="nav-link collapsed" data-bs-target="#SocialPages" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Social Pages</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+    </a>
+    <ul id="SocialPages" class="nav-content collapse" data-bs-parent="#SocialPages">
+        <li>
+            <a href="https://telegram.dog/studyrays_official">
+                <i class="bi bi-telegram"></i><span>Telegram</span>
+            </a>
+        </li>
+<!-- 
+        <li>
+            <a href="apk/">
+                <i class="bi bi-circle"></i><span>Term & Condition</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="apk/">
+                <i class="bi bi-circle"></i><span>About Us</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="apk/">
+                <i class="bi bi-circle"></i><span>Contact Us</span>
+            </a>
+        </li> -->
+
+             </ul>
+         </li><!-- End Components Nav -->
+
+     </ul>
+
+ </aside><!-- End Sidebar-->          <!-- ======= Header ======= -->
+
+ <header id="header" class="header fixed-top d-flex align-items-center">
+
+     <div class="d-flex align-items-center justify-content-between">
+         <a href="index.php" class="logo d-flex align-items-center">
+             <img src="https://studyrays.site/logo.jpg" class="rounded-circle" alt="">
+             <span class="d-none d-lg-block">NiceAdmin</span>
+         </a>
+         <i class="bi bi-list toggle-sidebar-btn"></i>
+     </div><!-- End Logo -->
+
+     <div class="search-bar">
+
+
+         <form method="GET" action="" class="search-form d-flex align-items-center" id="searchForm2">
+
+             <input type="text" class="form-control rounded-start" placeholder="Search Pw Courses ( Enter 3 letter to start search )" name="search" id="searchInput2" autocomplete="off">
+
+         </form>
+
+
+     </div><!-- End Search Bar -->
+
+     <nav class="header-nav ms-auto">
+         <ul class="d-flex align-items-center">
+
+             <li class="nav-item d-block d-lg-none">
+                 <a class="nav-link nav-icon search-bar-toggle " href="#">
+                     <i class="bi bi-search"></i>
+                 </a>
+             </li><!-- End Search Icon-->
+
+
+             <li class="nav-item dropdown">
+
+
+
+                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                     <i class="bi bi-bell"></i>
+                     <span class="badge bg-primary badge-number">1</span>
+                 </a><!-- End Notification Icon -->
+
+                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                     <li class="dropdown-header">
+                         You have new notifications
+                         <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                     </li>
+                     <li>
+                         <hr class="dropdown-divider">
+                     </li>
+
+                     <li class="notification-item">
+                         <i class="bi bi-exclamation-circle text-warning"></i>
+                         <div>
+                             <h4>Welcome Message</h4>
+                             <p>Welcome On StudyRays</p>
+                             <p>Just Now</p>
+                         </div>
+                     </li>
+
+                     <li>
+                         <hr class="dropdown-divider">
+                     </li>
+                     <li class="dropdown-footer">
+                         <a href="#">Show all notifications</a>
+                     </li>
+
+                 </ul><!-- End Notification Dropdown Items -->
+
+             </li><!-- End Notification Nav -->
+
+         
+             <li class="nav-item dropdown pe-3">
+
+                 <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                     <img src="https://studyrays.site/logo.jpg" alt="Profile" class="rounded-circle">
+                     <span class="d-none d-md-block dropdown-toggle ps-2">Dev Jisu</span>
+                 </a><!-- End Profile Iamge Icon -->
+
+                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                     <li class="dropdown-header">
+                         <h6>Dev Jisu</h6>
+                         <span>Web Developer</span>
+                     </li>
+                     <li>
+                         <hr class="dropdown-divider">
+                     </li>
+
+                     <li>
+                         <a class="dropdown-item d-flex align-items-center" href="https://telegram.dog/studyrays_official">
+                             <i class="bi bi-telegram"></i>
+                             <span>Join Telegram</span>
+                         </a>
+                     </li>
+
+                 </ul><!-- End Profile Dropdown Items -->
+             </li><!-- End Profile Nav -->
+
+         </ul>
+     </nav><!-- End Icons Navigation -->
+
+ </header><!-- End Header -->         
+         <!--**********************************
+            Content body start
+        ***********************************-->
+
+         <div id="content">
+
+             <section class="section dashboard">
+                 <div class="row">
+
+
+
+
+                     <div id="searchResults" class="list-group mt-5"></div>
+
+                     <!-- Container to show live search results -->
+
+  <body>
+           <div class="card mt-3">
+            <div class="card-body">
+      <h5 class="card-title"></h5>
+      
+      </div>
+      </div>
+                  
+             <body>
+
+      <video
+        controls
+        crossorigin
+        playsinline
+        poster=""
+      ></video>
+            
+            
+<div id="videoPlayer">
+        <!-- HTML for playing video on PC -->
+        <a href="drmplayer.php?v=https://d1d34p8vz63oiq.cloudfront.net/4788fd80-b6b5-4999-ac77-08ba640f4a2d/master.mpd" class="btn btn-danger w-100 mt-4">
+            <i class="bi bi-play"></i> Play Video In PC (If you install the CORs extension, then it will work)
+        </a>
+    </div>
+
+    
+
+<div id="mobileCard" class="card mt-3" style="display: none;">
+
+                <div class="card-body">
+                    <p class="alert-message"><i class="fas fa-exclamation-circle text-danger mr-1"></i>If above player not working. Please download our application to play this video.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="videoLink">Video Link</label>
+                            <textarea class="form-control" col="50" row="50" id="videoLink" readonly>https://d1d34p8vz63oiq.cloudfront.net/4788fd80-b6b5-4999-ac77-08ba640f4a2d/master.mpd</textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-3 mt-2" onclick="copyLink()"><i class="far fa-copy mr-1"></i>Copy Link</button>
+                        <a href="https://cutt.ly/Ew2aV5lK" class="btn btn-success mb-3 ml-2 download-btn"><i class="fas fa-download mr-1"></i>Download Player Application</a>
+                        <p class="mt-3 text-center" style="font-size: 18px; color: #333; font-weight: bold;">Just copy the link and paste in player application and click on play button thats it.</p>
+                    </form>
+                </div>
+            </div>
+   
+    <script>
+        // Function to check if the device is a mobile
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Show the card for mobile users if the device is a mobile
+        if (isMobile()) {
+            document.getElementById("mobileCard").style.display = "block";
+        }
+    </script>
+
+
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title text-danger">
+                    <center><b>🌹 Download Task 🌹</b></center>
+                </h5>
+                <hr>
+                <!-- Button Group -->
+                <div class="btn-group w-100 mt-3" role="group" aria-label="Modal Buttons">
+                   <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#downloadModal" id="openModalBtn">
+                        <i class="bi bi-download"></i> <b>Task 1</b>
+                    </button> -->
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#task2"
+                        id="openModalBtn2">
+                        <i class="bi bi-lock"></i> <b>Unlock 3 Lecture Download</b>
+                    </button>
+
+                   <!-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#task3"
+                        id="openModalBtn3">
+                        <i class="bi bi-download"></i> <b>Task 3</b>
+                </div> -->
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"86f24f643f453c77","r":1,"version":"2024.3.0","token":"72d7bd665aaa4a57b45682913a2c8cc7"}' crossorigin="anonymous"></script>
+</div>
+
+</div>
+
+
+
+
+
+   
+
+
+    
+    
+        
+    
+<!-- Task 1 Modal  -->
+<div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="downloadModalLabel">Task 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Add your download options or content here -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <div id="loadingSpinner" class="spinner-border mr-3" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <span id="fetching-text" class="ml-2 text-danger"><b> Fetching your details....</b></span>
+                </div>
+                <div id="modalContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Task 2 Modal  -->
+
+<div class="modal fade" id="task2" tabindex="-1" aria-labelledby="anotherModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="anotherModalLabel">Task 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div id="loadingSpinner2" class="spinner-border mr-3" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <span id="fetching-text2" class="ml-2 text-danger me-3"><b> Fetching your details....</b></span>
+                </div>
+
+                <div id="modalContent2"></div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> <i class="bi bi-cross"></i>
+                    <b>Close</b></button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- Task 3  Modal  -->
+
+<div class="modal fade" id="task3" tabindex="-1" aria-labelledby="anotherModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="anotherModalLabel">Task 3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div id="loadingSpinner3" class="spinner-border mr-3" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <span id="fetching-text3" class="ml-2 text-danger me-3"><b> Fetching your details....</b></span>
+                </div>
+
+                <div id="modalContent3"></div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> <i class="bi bi-cross"></i>
+                    <b>Close</b></button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- Notification Modal -->
+<div class="modal fade" id="studyRaysModal" tabindex="-1" role="dialog" aria-labelledby="studyRaysModalLabel"
+    aria-hidden="true">
+<!--    <div class="modal-dialog" role="document">-->
+<!--      <div class="modal-content">-->
+<!--        <div class="modal-header">-->
+<!--          <h5 class="modal-title">Welcome to StudyRays!</h5>-->
+<!--          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--        </div>-->
+<!--        <div class="modal-body">-->
+<!--          <div class="price-card">-->
+<!--            <h1>Lakshya JEE Batch</h1>-->
+<!--            <div class="price" id="price"></div>-->
+            <!--<div class="progress-wrapper">-->
+            <!--  <div class="progress">-->
+            <!--    <div class="progress-bar" role="progressbar" id="progressBar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>-->
+            <!--  </div>-->
+            <!--  <div class="progress-text" id="progressText"></div>-->
+            <!--</div>-->
+<!--            <ul class="features">-->
+<!--              <li><i class="fas fa-check-circle"></i> Live Batch Access</li>-->
+<!--              <li><i class="fas fa-check-circle"></i> Instant Batch Updates</li>-->
+<!--              <li><i class="fas fa-check-circle"></i> Unlimited Ad-Free Downloads</li>-->
+<!--              <li><i class="fas fa-check-circle"></i> Stable Server Environment</li>-->
+<!--              <li><i class="fas fa-check-circle"></i> Dedicated Support</li>-->
+<!--               <li><i class="fas fa-check-circle"></i> Only for 200 Students</li>-->
+<!--            </ul>-->
+<!--            <a href="https://telegram.dog/StudyRaysHolder" class="btn btn-danger"><i class="fas fa-mobile"></i> Contact Us</a>-->
+<!--            <div class="countdown" id="countdown"></div>-->
+
+            <!-- FAQs Accordion -->
+<!--           <div class="accordion" id="accordionExample">-->
+<!--              <div class="accordion-item">-->
+<!--                <h2 class="accordion-header" id="headingOne">-->
+<!--                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+<!--                    Why is it paid?-->
+<!--                  </button>-->
+<!--                </h2>-->
+<!--                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">-->
+<!--                  <div class="accordion-body">-->
+<!--                    Need efforts, time, and hard work for this. If it's free, some people might sell it, which would result in a loss for us.-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="accordion-item">-->
+<!--                <h2 class="accordion-header" id="headingTwo">-->
+<!--                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                    Should we attend live lectures?-->
+<!--                  </button>-->
+<!--                </h2>-->
+<!--                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">-->
+<!--                  <div class="accordion-body">-->
+<!--                    Absolutely yes, with all qualities like 720p, 480p, 360p, 240p.-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="accordion-item">-->
+<!--                <h2 class="accordion-header" id="headingThree">-->
+<!--                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--                    What is the price for getting access?-->
+<!--                  </button>-->
+<!--                </h2>-->
+<!--                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">-->
+<!--                  <div class="accordion-body">-->
+<!--                    ₹149 for 4 months access.-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="accordion-item">-->
+<!--                <h2 class="accordion-header" id="headingFour">-->
+<!--                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">-->
+<!--                    Will the website also be paid?-->
+<!--                  </button>-->
+<!--                </h2>-->
+<!--                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">-->
+<!--                  <div class="accordion-body">-->
+<!--                    No, it will remain permanently free.-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="accordion-item">-->
+<!--                <h2 class="accordion-header" id="headingFive">-->
+<!--                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
+<!--                    Should we download instantly after live over?-->
+<!--                  </button>-->
+<!--                </h2>-->
+<!--                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">-->
+<!--                  <div class="accordion-body">-->
+<!--                    Yes.-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+            <!-- End of FAQs Accordion -->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+ <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="studyRaysModalLabel"><strong>🚨 Important Notice 🚨</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Many users are joining fake Study Rays channels.</strong> Ensure you join the official
+                    channel to receive regular updates about the channel/website. Beware of imitations! 🕵️‍♂️</p>
+                <p><a href="https://telegram.dog/+PQRH3MJfeacxZWU1" target="_blank" class="btn btn-primary">
+                        <i class="bi bi-telegram"></i> <strong>Join Official Channel</strong>
+                    </a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+    <!-- Hls.js 0.9.x and 0.10.x both have critical bugs affecting this demo. Using fixed git hash to when it was working (0.10.0 pre-release), until https://github.com/video-dev/hls.js/issues/1790 has been resolved -->
+    <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+    <script src="https://unpkg.com/plyr@3"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.querySelector("video");
+        const controls = [
+          "rewind",
+          "play",
+          "fast-forward",
+          "progress",
+          "current-time",
+          "settings",
+          "fullscreen",
+          'pip', 
+          'airplay',
+          "keyboard",
+        ];
+        const sources = {
+          240: "player/file.php?vid=4788fd80-b6b5-4999-ac77-08ba640f4a2d&quality=240&ex=.m3u8",
+          360: "player/file.php?vid=4788fd80-b6b5-4999-ac77-08ba640f4a2d&quality=360&ex=.m3u8",
+          480: "player/file.php?vid=4788fd80-b6b5-4999-ac77-08ba640f4a2d&quality=480&ex=.m3u8",
+          720: "player/file.php?vid=4788fd80-b6b5-4999-ac77-08ba640f4a2d&quality=720&ex=.m3u8",
+        };
+
+        const player = new Plyr(video, {
+          controls: controls,
+          settings: ["quality", "speed"],
+          autoplay: true,
+          speed: {
+            selected: 1,
+            options: [
+              0.5, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3
+            ],
+          },
+          quality: {
+            default: "240",
+            options: ["240", "360", "480", "720"],
+            forced: true,
+            onChange: (newQuality) => {
+              const sourceUrl = sources[newQuality];
+              if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(sourceUrl);
+                hls.attachMedia(video);
+              } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = sourceUrl;
+              }
+            },
+          },
+        });
+
+        // Expose player so it can be used from the console
+        window.player = player;
+      });
+      
+      
+       document.addEventListener('DOMContentLoaded', () => {
+        // Listen for the full-screen change event
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                // Entered full-screen mode, try to lock the screen orientation
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock('landscape').catch(error => {
+                        console.error('Error locking screen orientation:', error);
+                    });
+                }
+            } else {
+                // Exited full-screen mode, try to unlock the screen orientation
+                if (screen.orientation && screen.orientation.unlock) {
+                    screen.orientation.unlock().catch(error => {
+                        console.error('Error unlocking screen orientation:', error);
+                    });
+                }
+            }
+        });
+    });
+    </script>
+    
+    
+
+
+
+
+<script>
+document.getElementById('share').addEventListener('click', function() {
+    if (navigator.share) {
+        navigator.share({
+                title: document.title,
+                url: window.location.href
+            })
+            .then(() => console.log('Sharing successful'))
+            .catch((error) => console.error('Error sharing:', error));
+    } else {
+        alert('Web Share API not supported in this browser');
+    }
+});
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+
+
+
+$(document).ready(function() {
+  $('#studyRaysModal').modal('show');
+});
+
+//    Task 1
+
+$(document).ready(function() {
+    $("#openModalBtn").click(function() {
+        // Show loading spinner with custom text
+        $("#loadingSpinner").show();
+        $("#fetching-text").show();
+
+        // Make AJAX request to PHP script
+        $.ajax({
+            type: "POST",
+            url: "fetch_details.php", // Replace with your PHP script URL
+            data: {
+                videoId: "4788fd80-b6b5-4999-ac77-08ba640f4a2d",
+            },
+
+            success: function(response) {
+                // Display response in modal
+                $("#modalContent").html(response);
+
+                // Check if the response contains countdown information
+                if (response.countdown) {
+                    // Display countdown in modal
+                    startCountdown(response);
+                }
+
+                // Hide loading spinner after processing the response
+                $("#loadingSpinner").hide();
+                $("#fetching-text").hide();
+            },
+            error: function(error) {
+                // Handle error
+                console.log(error);
+
+                // Display error message in modal
+                $("#modalContent").html("Error fetching details.");
+
+                // Hide loading spinner after processing the error
+                $("#loadingSpinner").hide();
+                $("#fetching-text").html("");
+            }
+        });
+    });
+
+
+    // for task 2 
+
+
+    $("#openModalBtn2").click(function() {
+        // Show loading spinner with custom text
+        $("#loadingSpinner2").show();
+        $("#fetching-text2").show();
+
+        // Make AJAX request to PHP script
+        $.ajax({
+            type: "POST",
+            url: "fetch_details2.php", // Replace with your PHP script URL
+            data: {
+                videoId: "4788fd80-b6b5-4999-ac77-08ba640f4a2d",
+            },
+
+            success: function(response) {
+                // Display response in modal
+                $("#modalContent2").html(response);
+
+                // Check if the response contains countdown information
+                if (response.countdown) {
+                    // Display countdown in modal
+                    startCountdown(response);
+                }
+
+                // Hide loading spinner after processing the response
+                $("#loadingSpinner2").hide();
+                $("#fetching-text2").hide();
+            },
+            error: function(error) {
+                // Handle error
+                console.log(error);
+
+                // Display error message in modal
+                $("#modalContent2").html("Error fetching details.");
+
+                // Hide loading spinner after processing the error
+                $("#loadingSpinner2").hide();
+                $("#fetching-text2").html("");
+            }
+        });
+    });
+
+
+    // For task 3 
+
+
+    $("#openModalBtn3").click(function() {
+        // Show loading spinner with custom text
+        $("#loadingSpinner3").show();
+        $("#fetching-text3").show();
+
+        // Make AJAX request to PHP script
+        $.ajax({
+            type: "POST",
+            url: "fetch_details3.php", // Replace with your PHP script URL
+            data: {
+                videoId: "4788fd80-b6b5-4999-ac77-08ba640f4a2d",
+            },
+
+            success: function(response) {
+                // Display response in modal
+                $("#modalContent3").html(response);
+
+                // Check if the response contains countdown information
+                if (response.countdown) {
+                    // Display countdown in modal
+                    startCountdown(response);
+                }
+
+                // Hide loading spinner after processing the response
+                $("#loadingSpinner3").hide();
+                $("#fetching-text3").hide();
+            },
+            error: function(error) {
+                // Handle error
+                console.log(error);
+
+                // Display error message in modal
+                $("#modalContent3").html("Error fetching details.");
+
+                // Hide loading spinner after processing the error
+                $("#loadingSpinner3").hide();
+                $("#fetching-text3").html("");
+            }
+        });
+    });
+
+
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha384-3oxtStz2HCkbc8jVb8l00Nl9p6z2M8Tprk+Opj4yNg8aT4EBOMD5IvHm5tW8HtZP" crossorigin="anonymous">
+</script>
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fstudyrays.site&count_bg=%2379C83D&title_bg=%23555555&icon=freecodecamp.svg&icon_color=%23E7E7E7&title=HITS&edge_flat=false"
+    style="display: none;">
+
+<!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+function submitReport() {
+    // Disable submit button
+    $('#reportModal button[type="button"]').prop('disabled', true);
+
+    // Show spinner
+    $('#reportModal button[type="button"]').html(
+        '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...');
+
+    // Get selected report type
+    var reportType = $('input[name="reportType"]:checked').val();
+
+    // Additional data based on report type (You can modify this part according to your needs)
+    var additionalData = '';
+    if (reportType === 'custom') {
+        additionalData = $('#customIssueDescription').val();
+    }
+
+    // Ajax call to submit report
+    $.ajax({
+        type: 'POST',
+        url: 'submit_report.php', // Change this to the actual PHP file handling the report submission
+        data: {
+            reportType: reportType,
+            additionalData: additionalData
+        },
+        success: function(response) {
+            // Enable submit button
+            $('#reportModal button[type="button"]').prop('disabled', false);
+
+            // Hide spinner
+            $('#reportModal button[type="button"]').html('Submit Report');
+
+            // Display SweetAlert success message
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Your report has been submitted successfully!',
+            });
+
+            // Close the modal and remove modal backdrop
+            $('#reportModal').modal('hide');
+            $('.modal-backdrop').remove();
+        },
+        error: function(error) {
+            // Enable submit button
+            $('#reportModal button[type="button"]').prop('disabled', false);
+
+            // Hide spinner
+            $('#reportModal button[type="button"]').html('Submit Report');
+
+            // Display SweetAlert error message
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'There was an error submitting your report. Please try again.',
+            });
+        }
+    });
+}
+</script>
+
+<script>
+let alarmTime;
+let countdownInterval;
+let alarmSound = document.getElementById('alarmSound');
+
+// Check for existing alarm in cookies on page load
+window.onload = function() {
+    const storedAlarm = localStorage.getItem('alarm');
+    if (storedAlarm) {
+        alarmTime = new Date(storedAlarm);
+        showCancelAlarmButton();
+        startCountdown();
+    }
+};
+
+function setAlarm() {
+    $('#alarmModal').modal('show');
+}
+
+function saveAlarm() {
+    const hour = parseInt($('#hour').val()) || 0;
+    const minute = parseInt($('#minute').val()) || 0;
+    const second = parseInt($('#second').val()) || 0;
+
+    if (hour === 0 && minute === 0 && second === 0) {
+        alert('Please enter a valid time.');
+        return;
+    }
+
+    alarmTime = new Date();
+    alarmTime.setHours(alarmTime.getHours() + hour);
+    alarmTime.setMinutes(alarmTime.getMinutes() + minute);
+    alarmTime.setSeconds(alarmTime.getSeconds() + second);
+
+    // Save alarm in cookies
+    localStorage.setItem('alarm', alarmTime);
+
+    $('#alarmModal').modal('hide');
+    startCountdown();
+    showCancelAlarmButton();
+}
+
+function showCancelAlarmButton() {
+    $('#setAlarmBtn').prop('disabled', true);
+    $('#cancelAlarmBtn').show();
+}
+
+function startCountdown() {
+    countdownInterval = setInterval(updateCountdown, 1000);
+}
+
+function updateCountdown() {
+    const now = new Date();
+    const difference = alarmTime - now;
+
+    if (difference <= 0) {
+        clearInterval(countdownInterval);
+        showAlert();
+        resetAlarm();
+        hideCancelAlarmButton();
+        playAlarmSound();
+    } else {
+        const hours = Math.floor(difference / 3600000);
+        const minutes = Math.floor((difference % 3600000) / 60000);
+        const seconds = Math.floor((difference % 60000) / 1000);
+
+        const countdownText = `${hours}h ${minutes}m ${seconds}s`;
+        $('#setAlarmBtn').html(`<i class="fas fa-clock"></i> ${countdownText}`);
+    }
+}
+
+function showAlert() {
+    Swal.fire({
+        title: 'Time\'s up!',
+        text: 'Alarm is ringing.',
+        icon: 'success',
+        showConfirmButton: true,
+        confirmButtonText: 'OK',
+        allowOutsideClick: false,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Show forced popup to stop the alarm
+            showForcedPopup();
+        }
+    });
+}
+
+function showForcedPopup() {
+    Swal.fire({
+        title: 'Alarm',
+        text: 'Click OK to stop the alarm.',
+        icon: 'warning',
+        showConfirmButton: true,
+        confirmButtonText: 'OK',
+        allowOutsideClick: false,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            stopAlarmSound();
+            resetAlarm();
+            hideCancelAlarmButton();
+            // Remove alarm from cookies
+            localStorage.removeItem('alarm');
+        }
+    });
+}
+
+function playAlarmSound() {
+    // Stop any currently playing audio
+    if (!alarmSound.paused) {
+        alarmSound.pause();
+        alarmSound.currentTime = 0;
+    }
+
+    // Play the alarm sound
+    alarmSound.play();
+}
+
+function cancelAlarm() {
+    Swal.fire({
+        title: 'Confirm Cancel',
+        text: 'Do you really want to cancel the alarm?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, cancel it!',
+        cancelButtonText: 'No, keep it'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            clearInterval(countdownInterval);
+            resetAlarm();
+            hideCancelAlarmButton();
+            // Remove alarm from cookies
+            localStorage.removeItem('alarm');
+            stopAlarmSound();
+        }
+    });
+}
+
+function hideCancelAlarmButton() {
+    $('#setAlarmBtn').prop('disabled', false);
+    $('#setAlarmBtn').html('<i class="bi bi-alarm"></i> Set Timeout Goal');
+    $('#cancelAlarmBtn').hide();
+}
+
+function stopAlarmSound() {
+    // Stop the alarm sound
+    alarmSound.pause();
+    alarmSound.currentTime = 0;
+}
+
+function resetAlarm() {
+    alarmTime = null;
+    $('#hour').val('');
+    $('#minute').val('');
+    $('#second').val('');
+}
+</script>
+  <script>
+    function copyLink() {
+      var link = document.getElementById('videoLink');
+      link.select();
+      document.execCommand('copy');
+      alert('Link copied to clipboard!');
+    }
+  </script>
+  
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>StudyRays</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Developed by <a href="https://devjisu.com">DevJisu</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <!--<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>-->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="assets/vendor/chart.js/chart.umd.js"></script>-->
+  <!--<script src="assets/vendor/echarts/echarts.min.js"></script>-->
+  <!--<script src="assets/vendor/quill/quill.min.js"></script>-->
+  <!--<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>-->
+  <!--<script src="assets/vendor/tinymce/tinymce.min.js"></script>-->
+  <!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+//  window.addEventListener("load", function () {
+//             // Hide the preloader and fade in the content after the page has loaded
+//             var preloader = document.getElementById("preloader");
+//             var content = document.getElementById("content");
+
+//             preloader.style.display = "none";
+//             content.style.opacity = 1;
+//         });
+
+       
+
+$(document).ready(function() {
+    // Function to handle live search on keyup event
+    $("#searchInput").keyup(function() {
+        var query = $(this).val();
+
+        // Display results after 3 characters
+        if (query.length >= 3) {
+            // Fetch search results using Ajax
+            $.ajax({
+                url: "search.php",
+                method: "GET",
+                data: {
+                    search: query
+                },
+                success: function(html) {
+                    // Check if HTML is not empty
+                    if (html.trim() !== '') {
+                        $("#searchResults").html(html);
+                    } else {
+                        $("#searchResults").html('<p>No results found</p>');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error fetching results:", status, error);
+                    $("#searchResults").html('<p>Error fetching results</p>');
+                }
+            });
+        } else {
+            // Clear results if less than 3 characters
+            $("#searchResults").empty();
+        }
+    });
+});
+
+
+
+$(document).ready(function() {
+    // Function to handle live search on keyup event
+    $("#searchInput2").keyup(function() {
+        var query = $(this).val();
+
+        // Display results after 3 characters
+        if (query.length >= 3) {
+            // Fetch search results using Ajax
+            $.ajax({
+                url: "search.php",
+                method: "GET",
+                data: {
+                    search: query
+                },
+                success: function(html) {
+                    // Check if HTML is not empty
+                    if (html.trim() !== '') {
+                        $("#searchResults").html(html);
+                    } else {
+                        $("#searchResults").html('<p>No results found</p>');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error fetching results:", status, error);
+                    $("#searchResults").html('<p>Error fetching results</p>');
+                }
+            });
+        } else {
+            // Clear results if less than 3 characters
+            $("#searchResults").empty();
+        }
+    });
+});
+</script>
+
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fstudyrays.site&count_bg=%2379C83D&title_bg=%23555555&icon=freecodecamp.svg&icon_color=%23E7E7E7&title=HITS&edge_flat=false"
+    style="display: none;">
+    
+</body>
+
+</html>
